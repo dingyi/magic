@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Magic by miniMAC</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Magic</h1>
+        <p>CSS3 Animations with special effects</p>
+
+        <p class="view"><a href="https://github.com/miniMAC/magic">View the Project on GitHub <small>miniMAC/magic</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/miniMAC/magic/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/miniMAC/magic/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/miniMAC/magic">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>CSS3 Animations with special effects. Now on beta, more effects coming soon. Many thanks to <a href="http://daneden.me/animate/">daneden</a> for inspiration!
+My next step is to minifing the code.
+Take a look at the demo <a href="http://www.minimamente.com/magic-css3-animations">link to demo page</a></p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Include the CSS style: magic.css</p>
+
+<p>Example:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"yourpath/magic.css"</span><span class="nt">&gt;</span>
+</pre></div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>This is a sample code on hover with jQuery, first you include the class "magictime" and after your desired animation.</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.meta-thumb'</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'magictime puffIn'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>You can change the time of the animation by set the class "magictime" for example:</p>
+
+<div class="highlight"><pre><span class="nc">.magictime</span> <span class="p">{</span>
+<span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">3s</span><span class="p">;</span>
+<span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">3s</span><span class="p">;</span>
+<span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">3s</span><span class="p">;</span>
+<span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">3s</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Default is CSS timing is:</p>
+
+<div class="highlight"><pre><span class="nc">.magictime</span> <span class="p">{</span>
+<span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
+<span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
+<span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
+<span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/miniMAC">miniMAC</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
