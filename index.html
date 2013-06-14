@@ -52,6 +52,14 @@ Take a look at the demo <a href="http://www.minimamente.com/magic-css3-animation
 <span class="p">});</span>
 </pre></div>
 
+<p>If you want to load the animation after certain time, you can use this example:</p>
+
+<div class="highlight"><pre><span class="c1">//set timer to 5 seconds, after that, load the magic animation</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.yourdiv'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'magictime puffIn'</span><span class="p">);</span>
+<span class="p">},</span> <span class="mi">5000</span><span class="p">);</span>
+</pre></div>
+
 <p>You can change the time of the animation by set the class "magictime" for example:</p>
 
 <div class="highlight"><pre><span class="nc">.magictime</span> <span class="p">{</span>
@@ -62,7 +70,7 @@ Take a look at the demo <a href="http://www.minimamente.com/magic-css3-animation
 <span class="p">}</span>
 </pre></div>
 
-<p>Default is CSS timing is:</p>
+<p>Default CSS timing is:</p>
 
 <div class="highlight"><pre><span class="nc">.magictime</span> <span class="p">{</span>
 <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
