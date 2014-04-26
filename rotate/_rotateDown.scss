@@ -1,0 +1,9 @@
+.rotateDown {
+  @include backface-visibility(visible !important);
+  @include animation-name(rotateDown);
+}
+
+@include keyframes(rotateDown) {
+  0% { transform-origin: 0 0; transform: perspective(800px) rotateX(0deg) translateZ(0px); }
+  100% { opacity: 0; transform-origin: 50% 100%; transform: perspective(800px) rotateX(-180deg) translateZ(300px); }
+}

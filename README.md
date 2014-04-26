@@ -5,17 +5,17 @@ CSS3 Animations with special effects. Now on beta, more effects coming soon. Man
 My next step is to minifing the code.
 Take a look at the demo [link to demo page](http://www.minimamente.com/magic-css3-animations)
 
+I fork this project and made them for SASS.
+
+In fact, almost every websites you don't need all animations at all, so you just need to import the ones you wanna use.
+
+
 ##Installation
 
 
-Include the CSS style: magic.css
-or
-include the mynified version: magic.min.css
-
-Example:
-```html
-<link rel="stylesheet" href="yourpath/magic.css">
-```
+This fork need Bourbon's keyframe minxin, include it first, and then include this project.
+and
+import them in your sass/scss file. eg: import 'magic/swap'
 
 ##Usage
 
@@ -37,29 +37,20 @@ setTimeout(function(){
 You can change the time of the animation by set the class "magictime" for example:
 ```css
 .magictime {
--webkit-animation-duration: 3s;
--moz-animation-duration: 3s;
--o-animation-duration: 3s;
-animation-duration: 3s;
+    @include animation-duration(3s);
 }
 ```
 
 Default CSS timing is:
 ```css
 .magictime {
--webkit-animation-duration: 1s;
--moz-animation-duration: 1s;
--o-animation-duration: 1s;
-animation-duration: 1s;
+    @include animation-duration(1s);
 }
 ```
 
 If you want to assign the timing to a specific animation, you can use that code (use 2 class):
 ```css
 .magictime.magic {
--webkit-animation-duration: 10s;
--moz-animation-duration: 10s;
--o-animation-duration: 10s;
-animation-duration: 10s;
+    @include animation-duration(10s);
 }
 ```

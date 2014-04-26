@@ -1,0 +1,9 @@
+.perspectiveUp {
+  @include backface-visibility(visible !important);
+  @include animation-name(perspectiveUp);
+}
+
+@include keyframes(perspectiveUp) {
+  0% { transform-origin: 0 0; transform: perspective(800px) rotateX(0deg); }
+  100% { transform-origin: 0 0; transform: perspective(800px) rotateX(180deg); }
+}

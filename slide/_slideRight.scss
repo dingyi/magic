@@ -1,0 +1,8 @@
+.slideRight {
+  @include animation-name(slideRight);
+}
+
+@include keyframes(slideRight) {
+  0% { transform-origin: 0 0; transform: translateX(0%); }
+  100% { transform-origin: 0 0; transform: translateX(100%); }
+}
